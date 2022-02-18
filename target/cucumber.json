@@ -3,11 +3,44 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-18T11:39:50.913Z",
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7270986200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user logged in",
+            "match": {
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1437449300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user clicks to Employees tab",
+            "match": {
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_to_Employees_tab()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-18T14:26:35.273Z",
         "before": [
           {
             "result": {
-              "duration": 5879037500,
+              "duration": 9180278300,
               "status": "passed"
             },
             "match": {
@@ -15,14 +48,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "the user should be able to login",
+        "line": 9,
+        "name": "User should be able to add a department",
         "description": "",
-        "id": "login;the-user-should-be-able-to-login",
+        "id": "as-a-user--i-should-be-able-to-use-functions-under-employees-menu;user-should-be-able-to-add-a-department",
         "after": [
           {
             "result": {
-              "duration": 1097700600,
+              "duration": 1270613400,
               "status": "passed"
             },
             "match": {
@@ -35,55 +68,79 @@
         "steps": [
           {
             "result": {
-              "duration": 959947100,
+              "duration": 12997200,
               "status": "passed"
             },
-            "line": 4,
-            "name": "the user on the login page",
+            "line": 10,
+            "name": "the user should be able to see title as \"(1) Company Structure\"",
             "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"(1) Company Structure\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_should_be_able_to_see_title_as(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 307897500,
+              "duration": 173943200,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user enters the valid credentials",
+            "line": 11,
+            "name": "the user clicks the Add Department button",
             "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_enters_the_valid_credentials()"
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_the_Add_Department_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5414783500,
+              "duration": 514835800,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user clicks login button",
+            "line": 12,
+            "name": "the user writes Department Name",
             "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_clicks_login_button()"
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_writes_Department_Name()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 17994200,
+              "duration": 404869600,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user should be able to see title as \"(1) Portal\"",
+            "line": 13,
+            "name": "the user select Parent Department",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"(1) Portal\"",
-                  "offset": 40
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_should_be_able_to_see_title_as(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_select_Parent_Department()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134404300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user clicks Add button",
+            "match": {
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_Add_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109966000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user should be able to see the added department",
+            "match": {
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_should_be_able_to_see_the_added_department()"
             },
             "keyword": "Then "
           }
@@ -95,11 +152,11 @@
         ]
       }
     ],
-    "name": "Login",
+    "name": "As a user, I should be able to use functions under Employees menu",
     "description": "",
-    "id": "login",
+    "id": "as-a-user--i-should-be-able-to-use-functions-under-employees-menu",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/Employees.feature",
     "tags": []
   }
 ]

@@ -16,7 +16,7 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//input[@class='login-btn']")
     public WebElement loginButton;
 
-    public void Login(String username,String password){
+    public void login(String username,String password){
         usernameInputBox.sendKeys(username);
         passwordInputBox.sendKeys(password);
         loginButton.click();

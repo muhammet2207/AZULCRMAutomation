@@ -1,5 +1,6 @@
 Feature: Login
-  @wip
+
+
   Scenario: the user should be able to login
     Given the user on the login page
     When the user enters the valid credentials
