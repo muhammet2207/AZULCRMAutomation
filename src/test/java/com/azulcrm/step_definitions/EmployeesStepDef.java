@@ -8,6 +8,7 @@ import com.azulcrm.utilities.ConfigurationReader;
 import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
 public class EmployeesStepDef {
@@ -54,6 +55,36 @@ public class EmployeesStepDef {
     @Then("the user should be able to see the added department")
     public void the_user_should_be_able_to_see_the_added_department() {
         Assert.assertTrue("Verify new Department added",employeesPage.addedNewDepartment.isDisplayed());
+    }
+    @Given("the user clicks Find Employee tab")
+    public void the_user_clicks_Find_Employee_tab() {
+        employeesPage.findEmployeeTab.click();
+    }
+
+    @When("the user search {string} via search box")
+    public void the_user_search_via_search_box(String username) {
+        employeesPage.employeeSearchBox.sendKeys(username, Keys.ENTER);
+    }
+
+    @Then("the user should be able to see employees name as {string}")
+    public void the_user_should_be_able_to_see_employees_information(String username) {
+        String EmployeeName = employeesPage.searchedEmployee.getText();
+        Assert.assertEquals("Verify the Employees info",EmployeeName,username);
+    }
+    @When("the user clicks Search By Alphabet tab")
+    public void the_user_clicks_Search_By_Alphabet_tab() {
+        employeesPage.searchByAlphabetTab.click();
+    }
+
+    @When("the user choose any alphabet")
+    public void the_user_choose_any_alphabet() {
+        employeesPage.searchedAlphabet.click();
+    }
+
+    @Then("the user should be able to see the employees name")
+    public void the_user_should_be_able_to_see_the_employees_name() {
+        String EmployeeName = employeesPage.alphabeticallySearchedEmployee.getText();
+        Assert.assertEquals("Verify the Employees info","cat animal",EmployeeName);
     }
 
 }

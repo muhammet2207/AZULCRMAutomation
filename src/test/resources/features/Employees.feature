@@ -15,9 +15,16 @@ Feature: As a user, I should be able to use functions under Employees menu
     And the user clicks Add button
     Then the user should be able to see the added department
 
-  @wip
+
   Scenario: User should be able to find employees by search box
     Given the user clicks Find Employee tab
     Then the user should be able to see title as "(1) Find Employee"
     When the user search "Alex Deep" via search box
-    Then the user should be able to see employees information
+    Then the user should be able to see employees name as "Alex Deep"
+  @wip
+  Scenario: User should be able to find employees by search by Alphabet
+    Given the user clicks Find Employee tab
+    Then the user should be able to see title as "(1) Find Employee"
+    When the user clicks Search By Alphabet tab
+    And the user choose any alphabet
+    Then the user should be able to see the employees name

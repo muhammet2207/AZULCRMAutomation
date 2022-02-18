@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7270986200,
+              "duration": 8166377100,
               "status": "passed"
             },
-            "line": 3,
+            "line": 4,
             "name": "the user logged in",
             "match": {
               "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_logged_in()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 1437449300,
+              "duration": 1395552400,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "the user clicks to Employees tab",
             "match": {
               "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_to_Employees_tab()"
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-18T14:26:35.273Z",
+        "start_timestamp": "2022-02-18T15:30:22.611Z",
         "before": [
           {
             "result": {
-              "duration": 9180278300,
+              "duration": 6623880900,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 9,
-        "name": "User should be able to add a department",
+        "line": 25,
+        "name": "User should be able to find employees by search by Alphabet",
         "description": "",
-        "id": "as-a-user--i-should-be-able-to-use-functions-under-employees-menu;user-should-be-able-to-add-a-department",
+        "id": "as-a-user--i-should-be-able-to-use-functions-under-employees-menu;user-should-be-able-to-find-employees-by-search-by-alphabet",
         "after": [
           {
             "result": {
-              "duration": 1270613400,
+              "duration": 1220605500,
               "status": "passed"
             },
             "match": {
@@ -68,79 +68,67 @@
         "steps": [
           {
             "result": {
-              "duration": 12997200,
+              "duration": 1451533400,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the user should be able to see title as \"(1) Company Structure\"",
+            "line": 26,
+            "name": "the user clicks Find Employee tab",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"(1) Company Structure\"",
-                  "offset": 40
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_should_be_able_to_see_title_as(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_Find_Employee_tab()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 173943200,
+              "duration": 9996900,
               "status": "passed"
             },
-            "line": 11,
-            "name": "the user clicks the Add Department button",
+            "line": 27,
+            "name": "the user should be able to see title as \"(1) Find Employee\"",
             "match": {
-              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_the_Add_Department_button()"
+              "arguments": [
+                {
+                  "val": "\"(1) Find Employee\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDef.the_user_should_be_able_to_see_title_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 133958500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user clicks Search By Alphabet tab",
+            "match": {
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_Search_By_Alphabet_tab()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 514835800,
+              "duration": 249918300,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the user writes Department Name",
+            "line": 29,
+            "name": "the user choose any alphabet",
             "match": {
-              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_writes_Department_Name()"
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_choose_any_alphabet()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 404869600,
+              "duration": 78974900,
               "status": "passed"
             },
-            "line": 13,
-            "name": "the user select Parent Department",
+            "line": 30,
+            "name": "the user should be able to see the employees name",
             "match": {
-              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_select_Parent_Department()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 134404300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the user clicks Add button",
-            "match": {
-              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_clicks_Add_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 109966000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user should be able to see the added department",
-            "match": {
-              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_should_be_able_to_see_the_added_department()"
+              "location": "com.azulcrm.step_definitions.EmployeesStepDef.the_user_should_be_able_to_see_the_employees_name()"
             },
             "keyword": "Then "
           }

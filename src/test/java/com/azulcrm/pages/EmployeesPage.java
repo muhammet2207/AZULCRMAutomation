@@ -21,4 +21,23 @@ public class EmployeesPage extends BasePage{
 
     @FindBy(xpath = "//a[@title='New Fancy Department']")
     public WebElement addedNewDepartment;
+
+    @FindBy(xpath = "//span[text()='Find Employee']")
+    public WebElement findEmployeeTab;
+
+    @FindBy(id = "user-fio")
+    public WebElement employeeSearchBox;
+
+    @FindBy(xpath = "//a[@class='employee-name-link']")
+    public WebElement searchedEmployee;
+
+    @FindBy(xpath = "(//span[@class='filter-but-text-block'])[3]")
+    public WebElement searchByAlphabetTab;
+
+    @FindBy(xpath = "(//div[@class='employee-ABC-popup'])/a[5]")
+    public WebElement searchedAlphabet;
+
+    @FindBy(xpath = "//a[@class='employee-name-link']")
+    public WebElement alphabeticallySearchedEmployee;
+
 }
